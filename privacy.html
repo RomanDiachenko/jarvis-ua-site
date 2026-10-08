@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis UA — Privacy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Політика конфіденційності</h1>
+    <p class="sub">Privacy Policy · Jarvis UA · оновлено 8 жовтня 2026 / updated October 8, 2026</p>
+    <nav><a href="index.html">Jarvis UA</a><a href="terms.html">Умови · Terms</a></nav>
+    <p class="lang"><a href="#en">English version below</a></p>
+  </header>
+
+  <div class="card">
+    <h2>Коротко</h2>
+    <ul>
+      <li>Jarvis UA працює на вашому пристрої. У розробника немає серверів, які збирають чи зберігають ваші дані.</li>
+      <li>Дані Google (Календар, Gmail, Google Home) використовуються лише для виконання ваших запитів.
+          Вони не продаються, не передаються для реклами й не використовуються для навчання моделей ШІ.</li>
+      <li>Доступ можна будь-коли відкликати.</li>
+    </ul>
+
+    <h3>Які дані Google використовуються</h3>
+    <ul>
+      <li><b>Google Календар</b> (calendar.events): перегляд, створення й видалення подій на ваш запит,
+          нагадування про найближчі зустрічі.</li>
+      <li><b>Gmail</b> (gmail.readonly, gmail.compose): читання листів на ваш запит, підрахунок непрочитаних,
+          збереження вкладень і створення <b>чернеток</b>. Jarvis UA ніколи не надсилає листи сам.</li>
+      <li><b>Google Assistant API</b> (необов'язково): передавання ваших команд пристроям розумного дому
+          з застосунку Google Home.</li>
+    </ul>
+
+    <h3>Де зберігаються дані</h3>
+    <p>Ключі доступу (OAuth-токени) зберігаються лише у файлах на вашому комп'ютері, у папці користувача Jarvis UA.
+       Вміст листів і подій не зберігається, окрім короткочасного кешу для екрана HUD.</p>
+
+    <h3>Кому передаються дані</h3>
+    <ul>
+      <li><b>Anthropic (Claude API)</b>: коли ви просите асистента щось зробити з листом чи подією, потрібний
+          фрагмент (наприклад, текст листа чи назви подій) надсилається в Claude API, щоб сформулювати відповідь.
+          Anthropic не використовує дані API для навчання моделей.</li>
+      <li><b>Microsoft (синтез мовлення Edge)</b>: текст відповідей асистента перетворюється на голос.</li>
+      <li><b>Telegram</b>: лише якщо ви самі підключили свого Telegram-бота; тоді відповіді надходять вам у чат.</li>
+    </ul>
+    <p>Розпізнавання голосу відбувається локально; аудіо з мікрофона нікуди не надсилається.</p>
+
+    <h3>Обмежене використання</h3>
+    <p>Використання й передавання інформації, отриманої з API Google, будь-якому іншому застосунку відповідає
+       <a href="https://developers.google.com/terms/api-services-user-data-policy">Політиці щодо даних
+       користувачів сервісів Google API</a>, зокрема вимогам щодо обмеженого використання (Limited Use).</p>
+
+    <h3>Як видалити дані й відкликати доступ</h3>
+    <ul>
+      <li>У Jarvis UA: Налаштування → Підключення → Google → «Вийти» (токен видаляється з комп'ютера).</li>
+      <li>У акаунті Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Видалення папки користувача Jarvis UA видаляє всі локальні дані асистента.</li>
+    </ul>
+
+    <h3>Контакти</h3>
+    <p>Питання щодо конфіденційності: <a href="https://github.com/RomanDiachenko">github.com/RomanDiachenko</a>.</p>
+  </div>
+
+  <div class="card" id="en">
+    <h2>Summary</h2>
+    <ul>
+      <li>Jarvis UA runs on your own device. The developer operates no servers that collect or store your data.</li>
+      <li>Google user data (Calendar, Gmail, Google Home) is used only to carry out your requests. It is never sold,
+          never used for advertising and never used to train AI models.</li>
+      <li>You can revoke access at any time.</li>
+    </ul>
+
+    <h3>Google data we access</h3>
+    <ul>
+      <li><b>Google Calendar</b> (calendar.events): list, create and delete events when you ask, and remind you of
+          upcoming meetings.</li>
+      <li><b>Gmail</b> (gmail.readonly, gmail.compose): read emails when you ask, count unread messages, save
+          attachments and create <b>drafts</b>. Jarvis UA never sends email on its own.</li>
+      <li><b>Google Assistant API</b> (optional): pass your commands to smart-home devices from the Google Home app.</li>
+    </ul>
+
+    <h3>Storage</h3>
+    <p>Access credentials (OAuth tokens) are stored only in files on your computer, in the Jarvis UA user folder.
+       Email and event content is not stored, except for a short-lived cache for the HUD screen.</p>
+
+    <h3>Sharing</h3>
+    <ul>
+      <li><b>Anthropic (Claude API)</b>: when you ask the assistant to do something with an email or event, the
+          relevant part (for example the email text or event titles) is sent to the Claude API to compose the answer.
+          Anthropic does not train models on API data.</li>
+      <li><b>Microsoft (Edge text-to-speech)</b>: the text of the assistant's replies is turned into speech.</li>
+      <li><b>Telegram</b>: only if you connect your own Telegram bot; replies are then delivered to your chat.</li>
+    </ul>
+    <p>Speech recognition runs locally; microphone audio is not sent anywhere.</p>
+
+    <h3>Limited Use</h3>
+    <p>Jarvis UA's use and transfer to any other app of information received from Google APIs will adhere to the
+       <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+       Policy</a>, including the Limited Use requirements.</p>
+
+    <h3>Deleting data and revoking access</h3>
+    <ul>
+      <li>In Jarvis UA: Settings → Connections → Google → "Sign out" (the token is deleted from your computer).</li>
+      <li>In your Google Account: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Deleting the Jarvis UA user folder removes all of the assistant's local data.</li>
+    </ul>
+
+    <h3>Contact</h3>
+    <p>Privacy questions: <a href="https://github.com/RomanDiachenko">github.com/RomanDiachenko</a>.</p>
+  </div>
+
+  <footer>Jarvis UA</footer>
+</main>
+</body>
+</html>
